@@ -26,7 +26,6 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Zoglin;
-import net.minecraft.world.entity.monster.hoglin.Hoglin;
 import net.minecraft.world.entity.monster.piglin.AbstractPiglin;
 import net.minecraft.world.entity.monster.warden.Warden;
 import net.minecraft.world.entity.npc.Villager;
@@ -148,7 +147,7 @@ public class ReverseEvents {
     private static boolean isFleeing(Monster mob) {
         // brain-driven mobs are left alone
         return !(mob instanceof Warden || mob instanceof AbstractPiglin
-                || mob instanceof Hoglin || mob instanceof Zoglin);
+                || mob instanceof Zoglin);
     }
 
     private static boolean isAggressiveAnimal(Animal a) {
